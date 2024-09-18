@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <title>
+      Akko Remake
+    </title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">  
+
+    <link rel="stylesheet" href="akko.css">
+    <link rel="icon" type="image/x-icon" href="icons/akko.ico">
+
+  </head>
+  <body>
+
+    <div class="top-bar">
+      <div class="offer">
+    <div class="arrowleft">
+        <img class="arrow" src="https://en.akkogear.com/wp-content/themes/xtra/assets/left-arrow.svg" height="30px">
+      </div>
+
+      <div class="textsale">
+        <p class="sale" id="sale">
+          Up to 20% OFF on Limited Editions Products.
+        </p>
+      </div>
+
+        <div class="arrowright">
+          <button class="button1" type="button" onclick="
+
+          saleText = saleText + 1;
+
+          if (saleText == 0) {
+            document.getElementById('sale').innerHTML='Up to 20% OFF on Limited Editions Products.'
+          } else if (saleText == 1) {
+            document.getElementById('sale').innerHTML='Special Offer: MOD 007V3 VIA FOR $99.99 - 105.99'
+          } else if (saleText == 2) {
+            document.getElementById('sale').innerHTML='Free shipping over USD$199 '
+          }
+
+            ">
+            <img class="arrow" src="https://en.akkogear.com/wp-content/themes/xtra/assets/right-arrow.svg" height="30px">
+          </button>
+          <img class="arrow" style="margin-left: 135px;" src="https://en.akkogear.com/wp-content/themes/xtra/assets/discord.svg" height="30px">
+        </div>
+      </div>
+
+
+  
+      <div class="navigation">
+        <div class="left-side">
+          <img class="akko-logo" src="https://en.akkogear.com/wp-content/themes/xtra/img/akko-logo-w.svg" height="40px">
+        </div>
+
+        <div class="middle-side">
+          <div>
+            <p class="text">Product</p>
+            <hr class="line">
+          </div>
+          <div>
+            <p class="text">Support</p>
+            <hr class="line">
+          </div>
+          <div>
+            <p class="text">Our Story</p>
+            <hr class="line">
+          </div>
+          <div>
+            <p class="text">Contact</p>
+            <hr class="line">
+          </div>
+          <div>
+            <p class="text">Deals</p>
+            <hr class="line">
+          </div>
+        </div>
+        
+
+        <div class="right-side">
+          <div> 
+            <div class="currency">
+              <div>
+                <img class="flag" src="icons/singapore.png" width="25px">
+              </div>
+              <div>
+                <p class="country-name">SGD</p>
+              </div>
+              <div>
+                <img class="downarrow" src="https://en.akkogear.com/wp-content/themes/xtra/assets/right-arrow.svg" width="20px">
+              </div>
+            </div>
+          </div>
+          <div>
+            <img class="iconright" src="icons/search.png" width="30px">
+          </div>
+          <div>
+            <img class="iconright" src="icons/profile.png " width="30px">
+          </div>
+          <div>
+            <img class="iconright" src="icons/cart.png" width="30px">
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <section class="slider-all">
+      <div class="slider">
+        <img id="slide-1" src="images/3.gif" width="100%" height="80%">
+        <img id="slide-2" src="images/1.jpg" width="100%" height="80%">
+        <img id="slide-3" src="images/2.jpg" width="100%" height="80%">
+        <img id="slide-4" src="images/4.gif" width="100%" height="80%">
+      </div>
+      <div class="slider-nav">
+        <a href="#slide-1"></a>
+        <a href="#slide-2"></a>
+        <a href="#slide-3"></a>
+        <a href="#slide-4"></a>
+      </div>
+    </section>
+
+    <p class="text-kb">Find the Right Keyboard for You</p>
+
+    <div class="products-grid">
+      <div class="picture-container">
+        <div class="overlay">
+          <p class="text-overlay">Keyboard ></p>
+        </div>
+      </div>
+      <div style="background-image: url(images/kb2.jpg);" class="picture-container">
+        <div class="overlay">
+          <p class="text-overlay">Barebone Kit ></p> 
+        </div> 
+      </div>
+    </div>
+
+    <div class="products-grid-2">
+      <div class="picture-container-2" style="background-image: url(images/kb3.jpg);" >
+        <div class="overlay-2">
+          <p class="text-overlay">Key Switches ></p>
+        </div>
+      </div>
+      <div class="picture-container-2" style="background-image: url(images/kb4.jpg);">
+        <div class="overlay-2">
+          <p class="text-overlay">Keycaps ></p>
+        </div>
+      </div>
+      <div class="picture-container-2" style="background-image: url(images/kb5.jpg);">
+        <div class="overlay-2">
+          <p class="text-overlay">Mouse ></p>
+        </div>
+      </div>
+    </div>
+
+    <p class="text-kb-2">Best Selling Products/Top Selling</p>
+    <div class="selling-products">
+      <div style="background-color: rgb(255, 255, 255);"></div>
+      <div class="text-kb-buy" style="font-weight: 400;">
+        Keyboard
+        <hr style="position:absolute;height:3px;width: 120px;background-color: black;margin: ;">
+      </div>
+      <div class="text-kb-buy">Barebone Kit</div>
+      <div class="text-kb-buy">Key Switches</div>
+      <div class="text-kb-buy">Keycaps</div>
+      <div class="text-kb-buy">Mice</div>
+      <div style="background-color: rgb(255, 255, 255);"></div>
+    </div>
+    <hr style="width: 595px;height: 2px; margin-top: 20px;margin-top: 10px; background-color: rgb(230, 230, 230); border-style: none;">
+
+    <div class="keyboards">
+      <div class="kb-container">
+        <div class="keyboard-preview">
+          <img class="img-preview" src="images/kb-1.png" height="240px" style="margin-left: 4px;">
+        </div>
+        <div class="kb-title">Pompompurin 5108B Plus</div>
+        <div>
+          <img src="icons/5_star.png" height="14px" style="display: block;margin: 0 auto 0 auto;">
+        </div>
+        <div class="price">$119.99</div>
+      </div>
+      <div class="kb-container">
+        <div class="keyboard-preview">
+          <img class="img-preview" src="images/kb-2.png" height="240px" style="margin-left: 4px;">
+        </div>
+        <div class="kb-title">Cinnamoroll ACR TOP75B</div>
+        <div>
+          <img src="icons/5_star.png" height="14px" style="display: block;margin: 0 auto 0 auto;">
+        </div>
+        <div class="price">$109.99</div>
+      </div>
+      <div class="kb-container">
+        <div class="keyboard-preview">
+          <img class="img-preview" src="images/kb-3.png" height="240px" style="margin-left: 4px;">
+        </div>
+        <div class="kb-title">MOD007v3 HE Year...</div>
+        <div>
+          <img src="icons/5_star.png" height="14px" style="display: block;margin: 0 auto 0 auto;">
+        </div>
+        <div class="price">$179.99</div>
+      </div>
+      <div class="kb-container">
+        <div class="keyboard-preview">
+          <img class="img-preview" src="images/kb-4.png" height="240px" style="margin-left: 4px;">
+        </div>
+        <div class="kb-title">MU01 Mountain Seclusion</div>
+        <div>
+          <img src="icons/5_star.png" height="14px" style="display: block;margin: 0 auto 0 auto;">
+        </div>
+        <div class="price">$119.99</div>
+      </div>
+      <div class="kb-container">
+        <div class="keyboard-preview">
+          <img class="img-preview" src="images/kb-5.png" height="240px" style="margin-left: 4px;">
+        </div>
+        <div class="kb-title">Black&Silver 5075B Plus</div>
+        <div>
+          <img src="icons/5_star.png" height="14px" style="display: block;margin: 0 auto 0 auto;">
+        </div>
+        <div class="price">$75.99 – $95.99</div>
+      </div>
+    </div>
+
+    <p class="text-kb" style="margin-top: 80px;">
+      Be a Proud Akko User
+    </p>
+
+    <div class="divider-3"> 
+      <div class="divider-3-container" style="background-image: url(images/2_1.jpg);">
+        <p class="overlay-3">Gaming</p>
+        <p class="overlay-4">Hall Effect Magnetic Switches</p>
+        <p class="overlay-5">Check more ></p>
+      </div>
+      <div class="divider-3-container" style="background-image: url(images/2_2.jpg);">
+        <p class="overlay-3">Custom Build</p>
+        <p class="overlay-4">Build Your Keyboard from Scratch</p>
+        <p class="overlay-5">Check more ></p>
+      </div>
+      <div class="divider-3-container" style="background-image: url(images/2_3.jpg);">
+        <p class="overlay-3">IP Collaboration</p>
+        <p class="overlay-4">Type with Your Favorite Characters</p>
+        <p class="overlay-5">Check more ></p>
+      </div>
+    </div>
+
+    <div class="divider-4">
+      <div class="divider-4-container" style="background-image: url(images/7.jpg);">
+        <p class="overlay-3">Connect with Community</p>
+        <img src="images/i1.png" height="200px" style="display: block;margin: 0 auto 0 auto;">
+      </div>
+      <div class="divider-4-container" style="background-image: url(images/8.jpg);">
+        <p class="overlay-3">Affiliate Program</p>
+        <img src="images/i2.png" height="200px" style="display: block;margin: 0 auto 0 auto;">
+      </div>
+    </div>
+
+    <p class="text-kb" style="margin-top: 70px;">Make Every Part of Your Setup Special</p>
+
+    <img src="images/akko.jpg" usemap="#image-map" style="display: block;margin: 0 auto 0 auto; width: 80%;border-radius: 15px;">
+      <map name="image-map">
+          <area target="_blank" alt="Wrists Rests" title="Wrists Rests" href="https://en.akkogear.com/store/wrist-rest/" coords="629,646,31" shape="circle">
+          <area target="_blank" alt="Keyboards" title="Keyboards" href="https://en.akkogear.com/store/keyboard/" coords="766,531,21" shape="circle">
+          <area target="_blank" alt="Keycaps" title="Keycaps" href="https://en.akkogear.com/store/keyboard/" coords="454,479,19" shape="circle">
+          <area target="_blank" alt="Switch" title="Switch" href="https://en.akkogear.com/store/switch/" coords="236,362,25" shape="circle">
+          <area target="_blank" alt="Accessory" title="Accessory" href="https://en.akkogear.com/store/accessory/" coords="420,198,30" shape="circle">
+          <area target="_blank" alt="Accessory" title="Accessory" href="https://en.akkogear.com/store/accessory/" coords="972,265,29" shape="circle">
+          <area target="_blank" alt="Mice" title="Mice" href="https://en.akkogear.com/store/mouse/" coords="1060,622,34" shape="circle">
+      </map>
+
+    <p class="text-kb" style="margin-top: 70px;">In The Press</p>
+    <p style="text-align: center;font-size: 22px;font-weight: 300;margin-top: -20px;">Magnetic Switch makes the new MOD007 special.</p>
+
+    <div class="dot">
+      <div class="dots" style="background-color: rgb(145, 145, 145);"></div>
+      <div class="dots"></div>
+      <div class="dots"></div>
+      <div class="dots"></div>
+      <div class="dots"></div>
+    </div>
+
+    <div class="logos">
+      <div style="opacity: 1;" class="logo-pic">
+        <img src="images/ign-2.png" height="50px">
+      </div>
+      <div class="logo-pic">
+        <img src="images/pc_gamer.png" height="40px">
+      </div>
+      <div class="logo-pic">
+        <img style="margin-left: " src="images/mmorpg.png" height="57px">
+      </div>
+      <div class="logo-pic">
+        <img src="images/forbes.png" height="42px">
+      </div>
+      <div class="logo-pic">
+        <img src="images/tom's-hardware.png" height="50px">
+      </div>
+    </div>
+
+    <p style="margin-top:150px;" class="text-kb">
+      Why Choose Akko
+    </p>
+  <div>
+    <div class="choose-akko">
+      <div class="containers">
+        <div style="background-image: url(icons/s1.png);" class="image-icon">
+        </div>
+        <div class="text-icon">
+            Global Partners
+        </div>
+        <div class="learn-more">
+          Learn more >
+        </div>
+      </div>
+      <div class="containers">
+        <div style="background-image: url(icons/s2.png);" class="image-icon">
+        </div>
+        <div class="text-icon">
+            Support
+        </div>
+        <div class="learn-more">
+          Learn more >
+        </div>
+      </div>
+      <div class="containers">
+        <div style="background-image: url(icons/s3.png);" class="image-icon">
+        </div>
+        <div class="text-icon">
+            FAQ
+        </div>
+        <div class="learn-more">
+          Learn more >
+        </div>
+      </div>  
+    </div>
+  </div>
+
+  <div>
+    <div class="credits">
+      <div class="email">
+        <div>
+          <img src="https://en.akkogear.com/wp-content/themes/xtra/img/akko-logo-w.svg" height="50px">
+        </div>
+        <div class="text-1">
+          <span style="color: #705cac;">Email:</span> support@akkogear.com
+        </div>
+        <div class="text-1">
+          Hours: 9:30am-6:00pm UTC+8
+        </div>
+        <div>
+          <img class="social-media" src="icons/facebook.png" style="margin-left: 0;">
+          <img class="social-media" src="icons/discord.png">
+          <img class="social-media" src="icons/x.png">
+          <img class="social-media" src="icons/yt.png">
+          <img class="social-media" src="icons/tiktok.png">
+          <img class="social-media" src="icons/instagram.icon">
+        </div>
+      </div>
+      <div style="margin-left: 30px;">
+        <p class="title-category">PRODUCTS</p>
+        <hr style="margin: -10px 30px 0 0;width:96px;">
+        <ul class="list">
+          <li>Keyboard</li>
+          <li>Keycap</li>
+          <li>Mouse</li>
+          <li>Switch</li>
+          <li>DIY Kit</li>
+        </ul>
+      </div>
+      <div>
+        <p class="title-category">AFTER-SALES</p>
+        <hr style="margin: -10px 30px 0 0;width:120px;">
+        <ul class="list">
+          <li>Download</li>
+          <li>Warranty Service</li>
+
+        </ul>
+      </div>
+      <div>
+        <p class="title-category">COMMUNICATION</p>
+        <hr style="margin: -10px 30px 0 0;width:160px;">
+        <ul class="list">
+          <li>Contact Us</li>
+          <li>Partner</li>
+          <li>Press Release</li>
+          <li>Blog</li>
+        </ul>
+      </div>
+      <div>
+        <p class="title-category">SIGN-UP NEWSLETTER</p>
+        <hr style="margin: -10px 30px 0 0;width:190px;">
+        <ul class="list">
+          <li>Subscribe to get news & promotions.</li>
+          <li>
+            <input class="placeholder-1" type="text" placeholder="Enter email adress">
+            <button class="submit">
+              Submit
+            </button>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <hr style="width:1450px;border-color:#767676;border-style: solid;border-width: 1px;">
+        <div class="lower">
+          <div style="font-family: poppins; color: #888c8f;font-size: 18px;margin-top: 15px;font-weight: 300;">
+            Copyright ©2024 Akko All Rights Reserved
+          </div>
+          <div>
+            <img class="flag-2" src="icons/china.png" width="30px">
+            <img class="flag-2" src="icons/usa.png" width="30px" style="opacity: 1;">
+            <img class="flag-2" src="icons/vietnam.png" width="30px">
+            <img class="flag-2" src="icons/germany.png" width="30px">
+            <img class="flag-2" src="icons/brazil.png" width="30px">
+            <img class="flag-2" src="icons/argentina.png" width="30px">
+          </div>
+          <div>
+          </div>
+          <div class="privacy">
+            Payment Policy
+          </div>
+          <div class="privacy">
+            Shipping Policy
+          </div>
+          <div class="privacy">
+            Privacy Policy
+          </div>
+          <div class="privacy">
+            Sales and Refunds
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <script>
+      
+      let saleText = '';
+
+      let text = 1
+
+
+
+    </script>
+
+  </body>
+</html>
